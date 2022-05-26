@@ -1,0 +1,635 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"er",
+				"erlyio_ws_event"
+			],
+			[
+				"de",
+				"delete"
+			],
+			[
+				"Re",
+				"ReplyChannel"
+			],
+			[
+				"Rep",
+				"ReplyChannel"
+			],
+			[
+				"R",
+				"ReplyChannel"
+			],
+			[
+				"f",
+				"fun\tFun Expression"
+			],
+			[
+				"_",
+				"_Event"
+			],
+			[
+				"ha",
+				"handle_event"
+			],
+			[
+				"erl",
+				"erlyio_http"
+			],
+			[
+				"for",
+				"format"
+			],
+			[
+				"erly",
+				"erlyio_ws"
+			],
+			[
+				"write",
+				"writeln"
+			],
+			[
+				"ge",
+				"get_http_json"
+			],
+			[
+				"Mb",
+				"Mb_diM"
+			],
+			[
+				"Mb_",
+				"Mb_diI"
+			],
+			[
+				"name",
+				"Name"
+			],
+			[
+				"sta",
+				"start_child"
+			],
+			[
+				"start_",
+				"start_child"
+			],
+			[
+				"Au",
+				"Auth"
+			],
+			[
+				"get_",
+				"get_iostate"
+			],
+			[
+				"get",
+				"get_point"
+			],
+			[
+				"P",
+				"Payload"
+			],
+			[
+				"C",
+				"C2"
+			],
+			[
+				"ga",
+				"gaugeData"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"Num",
+				"number"
+			],
+			[
+				"Cart",
+				"Chart"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"DB_",
+				"DB_msg"
+			],
+			[
+				"W",
+				"WSocket"
+			],
+			[
+				"ex",
+				"export"
+			],
+			[
+				"S",
+				"Socket"
+			],
+			[
+				"fo",
+				"format"
+			],
+			[
+				"erlyio",
+				"erlyio_hw_sup"
+			],
+			[
+				"s",
+				"start_child"
+			],
+			[
+				"tr",
+				"true"
+			],
+			[
+				"in",
+				"int"
+			],
+			[
+				"st",
+				"static"
+			],
+			[
+				"as",
+				"asimpto_fi"
+			],
+			[
+				"In",
+				"Integer"
+			],
+			[
+				"I",
+				"Integer"
+			],
+			[
+				"fi",
+				"fibonacci"
+			],
+			[
+				"int",
+				"Int"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"fa",
+				"fact"
+			],
+			[
+				"j",
+				"josephus_survivor_true"
+			],
+			[
+				"l",
+				"li2"
+			],
+			[
+				"lo",
+				"local"
+			],
+			[
+				"p",
+				"println"
+			],
+			[
+				"o",
+				"out"
+			],
+			[
+				"cl",
+				"class"
+			],
+			[
+				"m",
+				"m\tmethod"
+			],
+			[
+				"pri",
+				"print"
+			],
+			[
+				"Pr",
+				"Printer"
+			],
+			[
+				"pu",
+				"public"
+			],
+			[
+				"u",
+				"utf8"
+			],
+			[
+				"load",
+				"load2"
+			],
+			[
+				"H",
+				"H3"
+			],
+			[
+				"bi",
+				"binary"
+			],
+			[
+				"H3",
+				"H3_v"
+			],
+			[
+				"H2",
+				"H2_v"
+			],
+			[
+				"H1",
+				"H1_v"
+			],
+			[
+				"V",
+				"Value"
+			],
+			[
+				"B",
+				"b2i"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "checker.lsp",
+			"settings":
+			{
+				"buffer_size": 1715,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Java/Ant.sublime-build",
+					""
+				],
+				[
+					"Packages/Java/JavaC.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Java/JavaC.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: skeleton gen_event"
+			],
+			[
+				"bui",
+				"Set Syntax: NAnt Build File"
+			],
+			[
+				"snipp",
+				"Set Syntax: AppleScript"
+			],
+			[
+				"",
+				"Set Syntax: Erlang"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 299.0,
+		"history":
+		[
+			"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/evgen/Library/Mobile Documents/com~apple~CloudDocs/_works/guap_mac",
+		"/Users/evgen/Downloads/Разработка прикладных программ AUTOCAD.pdf",
+		"/Users/evgen/Documents/_projects/tex/eskdw/gen.tex",
+		"/Users/evgen/Downloads/EXBOLT.lsp",
+		"/Users/evgen/Library/Mobile Documents/com~apple~CloudDocs/_works/ЧМПЗ/ГГС/чмпз проектирование.xlsx",
+		"/Users/evgen/Documents/create_prj.sh",
+		"/Users/evgen/Documents/_projects/tex/template/my_style.cls",
+		"/Users/evgen/Documents/_projects/tex/ДКП ТС.tex",
+		"/Users/evgen/Library/Mobile Documents/com~apple~CloudDocs/ДКП ТС.tex",
+		"/Users/evgen/Documents/_projects/telero/telero.sublime-project",
+		"/Users/evgen/Documents/_projects/telero/src/telero_msg.erl",
+		"/Users/evgen/Library/Mobile Documents/com~apple~CloudDocs/_works/ЧМПЗ/ТЗ/тз.tex ",
+		"/Users/evgen/Documents/_projects/scada/erlyio/src/erlyio_ws_event.erl",
+		"/Users/evgen/Documents/_projects/scada/erlyio/src/erlyio_hw.erl",
+		"/Users/evgen/Documents/_projects/scada/erlyio/src/erlyio_ws.erl",
+		"/Users/evgen/Documents/_projects/scada/erlyio/erlyio.sublime-project",
+		"/Users/evgen/Documents/test.tex",
+		"/Users/evgen/Downloads/formal_letter_1.tex",
+		"/Users/evgen/Documents/test2.tex",
+		"/Users/evgen/Documents/_projects/erlyrebar3/.gitignore",
+		"/Users/evgen/Documents/_projects/scada/erlyio/src/erlyio_app.erl",
+		"/Users/evgen/Documents/_projects/scada/erlyio/src/untitled.erl",
+		"/Users/evgen/Documents/_projects/scada/erlyio/src/erlyio_db.erl",
+		"/Users/evgen/Documents/_projects/scada/erlyio/src/erlyio_hw_event.erl",
+		"/Users/evgen/Documents/_projects/scada/erlyio/erlyio.sublime-workspace",
+		"/Users/evgen/Documents/_projects/scada/erlyio/src/moxa.erl",
+		"/Users/evgen/Documents/_projects/scada/erlyio/src/test_moxa.erl",
+		"/Users/evgen/Documents/_projects/scada/erlyio/src/erlyio_http.erl",
+		"/Users/evgen/Documents/_projects/scada/erlyio/src/erlyio_hw_sup.erl",
+		"/Users/evgen/Documents/_projects/scada/erlyio/deps/mochiweb/src/mochiweb_websocket.erl",
+		"/Users/evgen/Documents/_projects/scada/erlyio/deps/mochiweb/src/mochiweb_http.erl",
+		"/Users/evgen/Documents/_projects/scada/erlyio/deps/mochiweb/src/mochiweb_socket.erl",
+		"/Users/evgen/Documents/_projects/scada/erlyio/src/erlyio_web.erl",
+		"/Users/evgen/Documents/_projects/scada/erlyio/src/erlyio_sup.erl",
+		"/Users/evgen/Documents/_projects/scada/erlyio/priv/www/moxa.html",
+		"/Users/evgen/Documents/_projects/scada/erlyio/src/erlyio_deps.erl",
+		"/Users/evgen/Documents/_projects/scada/erlyio/src/erlyio.app.src",
+		"/Users/evgen/Documents/_projects/scada/erlyio/src/websocket.erl",
+		"/Users/evgen/Documents/_projects/scada/erlyio/src/websockets_demo.erl",
+		"/Users/evgen/Documents/_projects/scada/erlyio/src/hex.erl",
+		"/Users/evgen/Documents/_projects/scada/erlyio/src/erlyio.erl",
+		"/Users/evgen/Documents/_projects/scada/test/motest/src/motest_web.erl",
+		"/Users/evgen/Documents/_projects/scada/erlyio/priv/www/line.html",
+		"/Users/evgen/Documents/_projects/scada/erlyio/priv/www/charts.js",
+		"/Users/evgen/Documents/_projects/scada/erlyio/priv/www/lineb.html",
+		"/Users/evgen/Downloads/Прочее/1.txt",
+		"/Users/evgen/Documents/_projects/scada/erlyio/priv/www/chart.js",
+		"/Users/evgen/Documents/_projects/scada/erlyio/priv/www/d1.html",
+		"/Users/evgen/Documents/_projects/scada/erlyio/priv/www/css/main.css",
+		"/Users/evgen/Documents/_projects/scada/erlyio/priv/www/socket.html",
+		"/Users/evgen/Documents/drobi.pas",
+		"/Users/evgen/Documents/_projects/scada/erlyio/deps/mochiweb/src/mochiweb_request.erl",
+		"/Users/evgen/Documents/_projects/scada/erlyio/src/erlyio_event.erl",
+		"/Users/evgen/Documents/_projects/scada/erlyio/start-dev.sh",
+		"/Users/evgen/Documents/_projects/couchdb/couchdb/src/couch/src/couch.app.src",
+		"/Users/evgen/Documents/_projects/erlydesk/rebar.config",
+		"/Users/evgen/Documents/AutoCAD Projects/ОС/deps/7 этаж.dxx",
+		"/Users/evgen/Documents/_projects/riak/_build/default/lib/riakc/src/riakc_pb_socket.erl",
+		"/Users/evgen/Documents/_projects/test.hs",
+		"/Users/evgen/Downloads/ГОСУДАРСТВЕННЫЙ КОНТРАК1/Показатели/new20201.csv",
+		"/Users/evgen/Downloads/ГОСУДАРСТВЕННЫЙ КОНТРАК1/Показатели/new20202.csv",
+		"/Users/evgen/Downloads/ГОСУДАРСТВЕННЫЙ КОНТРАК1/Показатели/new2020.csv",
+		"/Users/evgen/Downloads/ГОСУДАРСТВЕННЫЙ КОНТРАК1/Показатели/new20",
+		"/Users/evgen/Downloads/ГОСУДАРСТВЕННЫЙ КОНТРАК1/Показатели/Показатели1/new-Tаблица 9.csv",
+		"/Users/evgen/Downloads/ГОСУДАРСТВЕННЫЙ КОНТРАК1/Показатели/Показатели1/Лист 1-Tаблица 10.csv",
+		"/Users/evgen/Downloads/ГОСУДАРСТВЕННЫЙ КОНТРАК1/Показатели/2019.csv",
+		"/Users/evgen/Downloads/ГОСУДАРСТВЕННЫЙ КОНТРАК1/Показатели/20201.csv",
+		"/Users/evgen/Documents/_projects/erlyparcsv/erlyparscsv.erl",
+		"/Users/evgen/Documents/_projects/erlycsv/csv.erl",
+		"/Users/evgen/Library/Application Support/Sublime Text 3/Packages/User/dex_to_hex.py",
+		"/Users/evgen/Library/Application Support/Sublime Text 3/Packages/User/Main.sublime-menu",
+		"/Users/evgen/Documents/_projects/_skeletons/erlang/commontest.erl",
+		"/Users/evgen/Library/Application Support/Sublime Text 3/Packages/User/skeleton gen_common_test.sublime-snippet",
+		"/Users/evgen/Documents/_projects/_skeletons/erlang/common_test_hook.erl",
+		"/Users/evgen/Library/Application Support/Sublime Text 3/Packages/User/skeleton gen_common_test_hook.sublime-snippet",
+		"/Users/evgen/Documents/_projects/_skeletons/erlang/application.erl",
+		"/Users/evgen/Library/Application Support/Sublime Text 3/Packages/User/skeleton application.sublime-snippet",
+		"/Users/evgen/Library/Application Support/Sublime Text 3/Packages/User/skeleton eqc_statem.sublime-snippet",
+		"/Users/evgen/Documents/_projects/_skeletons/erlang/eqc_statem.erl",
+		"/Users/evgen/Documents/_projects/_skeletons/erlang/gen_event.erl",
+		"/Users/evgen/Library/Application Support/Sublime Text 3/Packages/User/skeleton gen_event.sublime-snippet",
+		"/Users/evgen/Library/Application Support/Sublime Text 3/Packages/User/skeleton gen_fsm.sublime-snippet",
+		"/Users/evgen/Documents/_projects/_skeletons/erlang/gen_fsm.erl",
+		"/Users/evgen/Library/Application Support/Sublime Text 3/Packages/User/skeleton gen_server.sublime-snippet",
+		"/Users/evgen/Documents/_projects/_skeletons/erlang/gen_server.erl",
+		"/Users/evgen/Library/Application Support/Sublime Text 3/Packages/User/skeleton gen_statem.sublime-snippet",
+		"/Users/evgen/Documents/_projects/_skeletons/erlang/gen_statem.erl",
+		"/Users/evgen/Documents/_projects/_skeletons/erlang/supervisor.erl",
+		"/Users/evgen/Library/Application Support/Sublime Text 3/Packages/User/skeleton supervisor.sublime-snippet",
+		"/Users/evgen/Library/Application Support/Sublime Text 3/Packages/User/skeleton gen_application.sublime-snippet",
+		"/Users/evgen/Library/Application Support/Sublime Text 3/Packages/User/test_sni.sublime-snippet",
+		"/Users/evgen/Library/Application Support/Sublime Text 3/Packages/User/test_sni",
+		"/Users/evgen/Documents/_projects/erlydesk/src/erlydesk_db.erl",
+		"/Users/evgen/Documents/_projects/first.java",
+		"/Users/evgen/Documents/_projects/apache-tomcat-9.0.30/conf/tomcat-users.xml",
+		"/Users/evgen/Documents/_projects/apache-tomcat-9.0.30/apache-tomcat-9.0.30/bin/startup.sh",
+		"/Users/evgen/Documents/_projects/couchdb/couchdb/src/couch/src/couch_app.erl",
+		"/Users/evgen/Documents/_projects/couchdb/couchdb/Makefile",
+		"/Users/evgen/Documents/_projects/couchdb/couchdb/make.cmd",
+		"/Users/evgen/Documents/_projects/couchdb/couchdb/src/couch_epi/rebar.config",
+		"/Users/evgen/Documents/_projects/erlyparcsv/csv/24_2.txt",
+		"/Users/evgen/Documents/_projects/erlyparcsv/csv/24",
+		"/Users/evgen/Documents/_projects/erlyparcsv/csv/24.txt",
+		"/Users/evgen/Documents/_projects/erlydesk/src/functions.erl",
+		"/Users/evgen/Documents/_projects/erlydesk/src/erlydesk_app.erl",
+		"/Users/evgen/Documents/_projects/erlydesk/priv/www/table.html",
+		"/Users/evgen/Documents/_projects/erlydesk/priv/www/index.html",
+		"/Users/evgen/Documents/_projects/erlydesk/src/erlydesk_web.erl",
+		"/Users/evgen/Documents/_projects/erlyparcsv/csv/27.csv",
+		"/Users/evgen/Downloads/АД_ГБОУ_554_монтаж_АПС_СОУЭ_4_452_669,94/word/embeddings/oleObject1.txt",
+		"/Users/evgen/Downloads/АД_ГБОУ_554_монтаж_АПС_СОУЭ_4_452_669,94/word/embeddings/oleObject1.bin",
+		"/Users/evgen/Documents/test1/список адресов/xl/sharedStrings.xml",
+		"/Users/evgen/Documents/test1/список адресов/xl/worksheets/sheet1.xml",
+		"/Users/evgen/Documents/test1/список адресо/31.07-Tаблица 1.csv",
+		"/Users/evgen/Documents/_projects/erlydesk/src/erlydesk.erl",
+		"/Users/evgen/Documents/erlydesk_web.erl"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "checker.lsp",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1715,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lisp/Lisp.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 159.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "rebar",
+	"project": "acad.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"["
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 218.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+	}
+}

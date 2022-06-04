@@ -7,7 +7,7 @@
             "follow_symlinks": true
         },
         {
-            "path": "docs",
+            "path": "doc",
             "name": "Documentation"//,
            // "file_exclude_patterns": ["*.css"]
         }

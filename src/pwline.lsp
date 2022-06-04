@@ -8,6 +8,8 @@
 ; (cadr(cadr(assoc -3 (entget (car (entsel)) '("PE_URL")))))
 
 
+
+
 ; суммируем длину линий из набора ss
 (defun set_lwpline_ss ( ss)
   "Documentation for set_lwpline_ss."

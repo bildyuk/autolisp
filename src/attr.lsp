@@ -35,84 +35,6 @@
 
  ; (sslength (ssget "x" (list (cons 0 "lwpolyline") (cons 8 "_CL.TC13 0.000")(list -3 (list "PE_URL")))))
 
-
-; (srch_layer "*TC*") -> список слоев удовлетворяющй паттерну
-(defun srch_layer (layer_name_pattern)
-  "Documentation for srch_layer."
-  (setq 
-    layer_name (cdr(assoc 2 (tblnext "layer"))))
-  ;(print layer_name)
-  (cond 
-    (
-      (= layer_name nil)
-      (tblnext "layer" t) 
-      end.)
-    (
-      (/= (wcmatch layer_name layer_name_pattern) T)
-      (progn    
-        (srch_layer layer_name_pattern)) )
-    (
-      (= (wcmatch layer_name layer_name_pattern) T)
-      (progn
-        (print layer_name)
-        (append 
-          (list layer_name)
-          (srch_layer layer_name_pattern))) )))
-
-; суммируем длину линий из набора ss
-(defun set_lwpline_ss ( ss)
-  "Documentation for set_lwpline_ss."
-  (setq 
-    tail (cdr ss))
-  ; (cadar (ssnamex ss))  ; первое entity name из ss
-  (cond
-        (
-          (/= tail nil)  
-          (+ (get_lwpline_length (cadar ss)) (set_lwpline_ss (cdr ss))))
-        (
-          (= tail nil)
-          0)))
-
-
-; (get_lwpline_length (car(entsel)))
-(defun get_lwpline_length (entity_name / AcDbPolyline vrtx_n)
-  "Documentation for lwpline. вычисляет длину полилинии"
-  (setq
-    AcDbPolyline (member (cons 100 "AcDbPolyline")(entget entity_name))
-    vrtx_n (cdr(assoc 90 AcDbPolyline)))
-  (get_vrtx_dist (get_vrtx_list AcDbPolyline)))
-
-
-(defun get_vrtx_list (a / head tail x y )
-   "Documentation for vrtx. получить список вершин из AcDbPolyline"
-   (setq 
-    head (car(member (assoc 10 a) a))
-    tail (cdr(member (assoc 10 a) a))
-    x (cadr head)
-    y (caddr head)
-    )
-   ; (print head)
-   (cond
-        (
-          (/= tail nil)  
-          (append (list (list x y)) (vrtx tail)))))
-
-
-; (get_vrtx_dist '((0 0)(1 0) (1 1)(0 1)(0 0)))
-(defun get_vrtx_dist (vrtx_list)
-  "Documentation for get_vrtx_dist. посчитать длину списка вершин ((1 1) (2 2)(3 3))"
-  (setq 
-    tail (cdr vrtx_list))
-  ; (print tail)
-  (cond
-        (
-          (/= tail nil)  
-          (+ (distance (car vrtx_list) (cadr vrtx_list)) (get_vrtx_dist tail)))
-        (
-          (= tail nil)
-          0)))
-
-
  ; (tblobjname "block" "Device_CCTV_1")
  ; (hadent "5ce")
  ; (ssget "x" (List(cons 2  "`*U*"))))
@@ -123,12 +45,19 @@
 
 (defun get_block_record_name (entity_name / a b c d)
   "Documentation for get_block_record_name. определяет название анонимного блока"
-  (setq 
-    a (entget (cdr (assoc 360 (member '(102 . "{ACAD_XDICTIONARY") (entget entity_name)))))
-    b (entget (cdr (assoc 360 (member '(3 . "AcDbBlockRepresentation") a))))
-    c (entget (cdr (assoc 360 (member '(3 . "AcDbRepData") b))))
-    d (entget (cdr (assoc 340 c))))
-   (assoc 2 d))
+  (setq
+     din_blk (wcmatch (cdr (assoc 2 (entget entity_name))) "\*U*"))
+    (cond
+      (
+        (eq din_blk T)
+        (progn 
+          (setq 
+            a (entget (cdr (assoc 360 (member '(102 . "{ACAD_XDICTIONARY") (entget entity_name)))))
+            b (entget (cdr (assoc 360 (member '(3 . "AcDbBlockRepresentation") a))))
+            c (entget (cdr (assoc 360 (member '(3 . "AcDbRepData") b))))
+            d (entget (cdr (assoc 340 c))))
+          (assoc 2 d)))
+        (t (assoc 2 (entget entity_name)))))
 
 ; (search_ent(car(entsel)) (list (cons 2 "ADDR")(cons 1 "TC01/01.02")))
 (defun search_ent (entity_name srch_tuple_lst / entity_desc entity_type srch_a srch_b)

@@ -44,18 +44,18 @@
   (setq de_dev  (filter_list  dev_list (cons 8 "_SCS.*Dect")))
 
 
-  (mapcar '(lambda(x) (print  (fun_num_link x))) sck_link)
-  (mapcar '(lambda(x) (print  (fun_num_dev x ))) sck_dev)
+  (setq 
+    sck_link_l (mapcar '(lambda(x) (cdr  (fun_num_link x))) sck_link)
+    sck_dev_l  (mapcar '(lambda(x) (cdr  (fun_num_dev x ))) sck_dev)
 
-  (mapcar '(lambda(x) (print  (fun_num_link x))) wf_link)
-  (mapcar '(lambda(x) (print  (fun_num_dev x ))) wf_dev)
+    wf_link_l (mapcar '(lambda(x) (cdr  (fun_num_link x))) wf_link)
+    wf_dev_l (mapcar '(lambda(x) (cdr  (fun_num_dev x ))) wf_dev)
 
-  (mapcar '(lambda(x) (print  (fun_num_link x))) de_link)
-  (mapcar '(lambda(x) (print  (fun_num_dev x ))) de_dev)
-
-
+    de_link_l (mapcar '(lambda(x) (cdr  (fun_num_link x))) de_link)
+    de_dev_l (mapcar '(lambda(x) (cdr  (fun_num_dev x ))) de_dev)
+)
 (print  "socket link")
-(print (length sck_link))
+(print (length sck_link_l))
 (print " socket dev:")
 (print (length sck_dev))
 
@@ -70,7 +70,44 @@
 
 end.)
  
-  
+
+
+(defun rechecker ( / parameters)
+  "Documentation for rechecker."
+(setq 
+  all_blk_l  (ss_2_list(ssget "x"  (list (cons 0 "INSERT"))))
+  all_link_l (ss_2_list (ssget "x" (list (cons 0 "lwpolyline") (list -3 (list "PE_URL")))))
+  dev_tc_l     (filter_list_f all_blk_l get_block_record_name (cons 2 "Device_TC"))
+  dev_socket_l (filter_list_f all_blk_l get_block_record_name (cons 2 "Device_socket"))
+  dev_wifi_l   (filter_list_f all_blk_l get_block_record_name (cons 2 "Device_WiFi"))
+  dev_dect_l   (filter_list_f all_blk_l get_block_record_name (cons 2 "Device_DECT")))
+
+(print (length all_blk_l))
+(print (length all_link_l))
+
+
+(print (length dev_dect_l))
+(print (length dev_wifi_l))
+(print (length dev_socket_l))
+)
+
+
+ (defun diff_lists (a b / a1)
+    "Documentation for diff_lists."
+     (setq 
+      head_a (car a)
+      head_b (car b)
+      tail_a (cdr a)
+      tail_b (cdr b))
+
+      (cond 
+        (
+          (= head_a head_b)
+          (diff_lists tail_a tail_b)
+          )
+
+        )
+      )
 ; (cadr(cadr(assoc -3 (entget (car (entsel)) '("PE_URL")))))
 
 

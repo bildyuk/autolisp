@@ -8,11 +8,15 @@
     tail (ssdel head ss))
   (cond
     (
-      (/= (sslength tail) 0) 
+      (> (sslength tail) 0) 
       (progn
-        
-        (append (list head ) (ss_2_list tail)) )
-        )))
+        (print head)
+        (append (list head ) (ss_2_list tail)) ))
+    (
+      (= (sslength tail) 0)
+      (progn
+        (print head)
+        (append (list head ) '()))) ))
   
    ;(filter_list link_list (cons 8 "_CL.TC##*"))
 (defun filter_list (list_ent pattern / head tail)

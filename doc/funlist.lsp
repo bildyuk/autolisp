@@ -25,11 +25,7 @@
 ; (add_0 9) -> "09"
 ; (add_0 10) -> "10"
 (defun add_0 ( i )
-  (cond 
-    ((< i 10)
-      (strcat "0" (itoa i)))
-    (t (itoa i))))
-
+ 
 
 (defun iterator (fun arg start end)
   "Documentation for iterator."

@@ -1,4 +1,4 @@
-(defun get_pwline_by ( / parameters)
+(defun get_pwline_w_url ( / parameters)
   "Documentation for get_pwline."
   (setq all_pwline (ssget "_W" (getpoint) (getpoint) (list (cons 0 "lwpolyline") (list -3 (list "PE_URL")))))
 (ss_2_list all_pwline)
@@ -11,18 +11,25 @@
 
 
 ; суммируем длину линий из набора ss
-(defun set_lwpline_ss ( ss)
-  "Documentation for set_lwpline_ss."
+(defun get_lwpline_length_ss ( ss)
+  "Documentation for get_lwpline_length_ss."
+  (get_lwpline_length_l (ss_2_list ss)))
+
+; суммируем длину линий из  list
+(defun get_lwpline_length_l ( _list / tail)
+  "Documentation for get_lwpline_length_l."
   (setq 
-    tail (cdr ss))
+    tail (cdr _list))
   ; (cadar (ssnamex ss))  ; первое entity name из ss
   (cond
         (
           (/= tail nil)  
-          (+ (get_lwpline_length (cadar ss)) (set_lwpline_ss (cdr ss))))
+          (+ (get_lwpline_length (car _list)) (get_lwpline_length_l (cdr _list))))
         (
           (= tail nil)
-          0)))
+          (get_lwpline_length (car _list)))))
+
+
 
 
 ; (get_lwpline_length (car(entsel)))
@@ -46,7 +53,7 @@
    (cond
         (
           (/= tail nil)  
-          (append (list (list x y)) (vrtx tail)))))
+          (append (list (list x y)) (get_vrtx_list tail)))))
 
 
 ; (get_vrtx_dist '((0 0)(1 0) (1 1)(0 1)(0 0)))

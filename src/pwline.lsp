@@ -7,8 +7,8 @@
 
 ; (cadr(cadr(assoc -3 (entget (car (entsel)) '("PE_URL")))))
 
-
-
+;(-3 ("PE_URL" (1000 . "17/11.11") (1002 . "{") (1000 . "17/11.11") (1002 . "{") (1071 . 0) (1002 . "}") (1002 . "}"))))
+;(sslength (ssget "X" '(( 0 . "lwpolyline") ( -3 ("PE_URL" (1000 . "14/##.##"))))))
 
 ; суммируем длину линий из набора ss
 (defun get_lwpline_length_ss ( ss)

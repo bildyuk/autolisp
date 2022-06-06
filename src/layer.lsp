@@ -10,13 +10,13 @@
       (tblnext "layer" t) 
       end.)
     (
-      (/= (wcmatch layer_name layer_name_pattern) T)
+      (/= (wcmatch (strcase layer_name) (strcase layer_name_pattern)) T)
       (progn    
         (srch_layer layer_name_pattern)) )
     (
-      (= (wcmatch layer_name layer_name_pattern) T)
+      (= (wcmatch (strcase layer_name) (strcase layer_name_pattern)) T)
       (progn
-        (print layer_name)
+       ; (print layer_name)
         (append 
           (list layer_name)
           (srch_layer layer_name_pattern))) )))

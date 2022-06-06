@@ -21,7 +21,48 @@
 
 
   ;проверить линии на 
-  ())
+  (print " "))
+
+
+(defun che (n / fu summ)
+  (setq 
+    str_n (itoa n)
+    layer_name_cl_socket (strcat "_CL.TC" str_n " #*")
+    layer_name_cl_dect   (strcat "_CL.TC" str_n " dect*")
+    layer_name_cl_wf     (strcat "_CL.TC" str_n " wf*")
+    layers_cl_list (list 
+      layer_name_cl_socket 
+      layer_name_cl_dect
+      layer_name_cl_wf) 
+    fu (lambda(x y) 
+      (sslength 
+        (ssget "X" 
+          (list 
+            (cons 0 "lwpolyline") 
+            (cons 8 x) 
+            (list -3 
+              (list "PE_URL" 
+                (cons 1000 y)))))))
+    cl_count_list (mapcar '(lambda(x) (fu x "##/##.##")) layers_cl_list))
+
+ (print (srch_layer layer_name_cl_socket)) (princ "\n")
+ (print (srch_layer layer_name_cl_dect))   (princ "\n")
+ (print (srch_layer layer_name_cl_wf))     (princ "\n")
+
+  (princ 
+    (strcat "всего линий в слоях " "_CL.TC" str_n "* : " (itoa (fu (strcat "_CL.TC" str_n "*") "##/##.##")) "\n"))
+  (princ 
+    (strcat "всего линий c маркировкой "  str_n "/##.## : " (itoa (fu "*" (strcat str_n "/##.##") )) "\n"))
+
+(mapcar '(lambda(x y) 
+    (princ  
+      (strcat "всего линий в слоях " x " : " (itoa y) "\n"))) layers_cl_list cl_count_list)
+(princ (strcat " суммарно sck&dect&wf : " (itoa (apply '+ cl_count_list)) "\n"))
+
+its_nothing.)
+
+
+
 
 (defun check_start (/ ss_ins)
   "Documentation for check_start."

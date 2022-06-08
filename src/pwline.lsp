@@ -71,6 +71,20 @@
           0)))
 
 
+;get_orto_distance (10 1 1 0) (10 2 2 0)
+(defun get_orto_distance (a b)
+  "Documentation for get_orto_distance."
+  (setq 
+    x1 (cadr a) 
+    y1 (caddr a)
+    x2 (cadr b) 
+    y2 (caddr b)
+    diff_x (abs (- x1 x2))
+    diff_y (abs (- y1 y2))
+    distance (+ diff_x diff_y)
+    weight (abs (- diff_x diff_y)))
+    (list weight distance))
+
 
 
   

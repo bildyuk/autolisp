@@ -22,7 +22,9 @@
 
   ;проверить линии на 
   (print " "))
-
+(defun ch (parameters)
+  "Documentation for ch."
+  ())
 
 (defun che (n / fu summ)
   (setq 
@@ -62,7 +64,30 @@
 its_nothing.)
 
 
+(defun optimizilla (parameters)
+  "Documentation for optimizilla."
+  (setq 
+    tc (list
+    (list "TC11" '(10 35608  24672  0)))
+    ; (list "TC12" '(10 83559  24709  0))
+    ; (list "TC13" '(10 59460  71222  0))
+    ; (list "TC14" '(10 59460  119170 0))
+    ; (list "TC21" '(10 155598 36663  0))
+    ; (list "TC22" '(10 227763 36669  0))
+    ; (list "TC23" '(10 203720 119153 0))
+    ; (list "TC24" '(10 155522 119132 0))
+    ; (list "TC25" '(10 108584 84457  0)))
+    ; all_blk_l  (ss_2_list(ssget "x"  (list (cons 0 "INSERT"))))
+    all_blk_l  (ss_2_list(ssget "W" (getpoint) (getpoint) (list (cons 0 "INSERT"))))
+    dev_tk_l   (filter_list_f all_blk_l get_block_record_name (cons 2 "Device_CCTV_1"))
+    fu_tk_tc_distance (lambda(x y) (list (car y) (get_orto_distance (assoc 10 (entget x)) (cadr y)))))
+; (print (length dev_tk_l))
+; (print (car dev_tk_l))
+(print (get_orto_distance (assoc 10 (entget (car dev_tk_l))) (cadr (car tc))))
+(fu_tk_tc_distance (car dev_tk_l) (car tc))
+;(mapcar '(lambda(x)(mapcar '(lambda(y)(fu_tk_tc_distance x y )) tc)) dev_tk_l)
 
+)
 
 (defun check_start (/ ss_ins)
   "Documentation for check_start."

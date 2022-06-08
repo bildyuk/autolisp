@@ -94,6 +94,16 @@
   )))
 
 
+(defun rot_orto ( / a b c)
+  "Documentation for rot_orto."
+  (setq 
+    a (entget(car(nentsel)))
+    b (assoc 50 a)
+    c (cons 50 (+ (cdr b) (/ pi 2)))
+    e (cdar (entmod (subst c b a))))
+  (entupd e))
+
+
 ; upd_entity_desc( (entget) 2 "12")
 (defun upd_entity_desc( entity_desc attr value )
   "в примере меняет в дескрипции вхождения (2 . какое-то значение) на (2. 12) и обновляет само вхождение"

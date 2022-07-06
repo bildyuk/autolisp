@@ -38,9 +38,9 @@
 
 
 ; (mark "TC" 1 10)
-(defun mark (marker prefix start end)
+(defun mark (prefix start end)
   "Documentation for mark."
-  (iterator marker ))
+  (iterator marker start end))
 
 
 ;     (marker "aa." 1) -> "aa.01"
@@ -55,15 +55,20 @@
 
 
 
+(defun gen_list ( start end)
+   "Documentation for gen_list."
+
+   (gen_list_ '() start end)
+   )
 
 ; (gen_list '() 1 5)'
-(defun gen_list (list_ start end)
+(defun gen_list_ (list_ start end)
    "Documentation for gen_list."
    (cond
     (
       (<= start end)
       (progn
-        (gen_list (cons start list_) (+ 1 start) end)))
+        (gen_list_ (cons start list_) (+ 1 start) end)))
     (t (reverse list_))))
   
    

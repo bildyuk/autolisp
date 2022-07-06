@@ -7,16 +7,17 @@
   (cond 
     (
       (= layer_name nil)
-      (tblnext "layer" t) 
-      end.)
+      (tblnext "layer" t)
+      end)
     (
-      (/= (wcmatch (strcase layer_name) (strcase layer_name_pattern)) T)
+      (not (wcmatch (strcase layer_name) (strcase layer_name_pattern)))
       (progn    
         (srch_layer layer_name_pattern)) )
     (
-      (= (wcmatch (strcase layer_name) (strcase layer_name_pattern)) T)
+      (wcmatch (strcase layer_name) (strcase layer_name_pattern))
       (progn
-       ; (print layer_name)
+        ;(print layer_name)
         (append 
           (list layer_name)
-          (srch_layer layer_name_pattern))) )))
+          (srch_layer layer_name_pattern))) ))
+  )

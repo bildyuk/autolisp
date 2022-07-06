@@ -18,18 +18,7 @@
 ; суммируем длину линий из  list
 (defun get_lwpline_length_l ( _list / tail)
   "Documentation for get_lwpline_length_l."
-  (setq 
-    tail (cdr _list))
-  ; (cadar (ssnamex ss))  ; первое entity name из ss
-  (cond
-        (
-          (/= tail nil)  
-          (+ (get_lwpline_length (car _list)) (get_lwpline_length_l (cdr _list))))
-        (
-          (= tail nil)
-          (get_lwpline_length (car _list)))))
-
-
+(apply '+ (mapcar 'get_lwpline_length _list)))
 
 
 ; (get_lwpline_length (car(entsel)))
@@ -86,5 +75,32 @@
     (list weight distance))
 
 
+(defun xline (parameters)
+  "Documentation for xline."
+  (setq 
+    a (get_vrtx_list (entget(car (nentsel))))
+    b (get_vrtx_list (entget(car (nentsel))))
+    a_x1 (caar a)  a_y1 (cadar a) 
+    a_x2 (caadr a) a_y2 (cadadr a)
+    b_x1 (caar b)  b_y1 (cadar b) 
+    b_x2 (caadr b) b_y2 (cadadr b)
+    delta 10)
 
+(print (list a_x1 a_x2 a_y1 a_y2))
+(print (list b_x1 b_x2 b_y1 b_y2))
+(print (abs (- a_x1 a_x2)))
+(print (abs (- b_y1 b_y2)))
+  (print (abs (- b_x1 b_x2)))
+    (print (abs (- a_y1 a_y2)))
+(print (and (= a_x1 a_x2) (= b_y1 b_y2)))
+(print (and (= b_x1 b_x2) (= a_y1 a_y2)))
+    
+    (cond 
+      (
+        (and (<= (abs (- a_x1 a_x2)) delta) (<= (abs (- b_y1 b_y2)) delta)) (list a_x1 b_y1))
+      ( 
+        (and (<= (abs (- b_x1 b_x2)) delta) (<= (abs (- a_y1 a_y2)) delta)) (list b_x1 a_y1))
+      )
+
+  )
   

@@ -46,10 +46,10 @@
 (defun get_block_record_name (entity_name / a b c d)
   "Documentation for get_block_record_name. определяет название анонимного блока"
   (setq
-     din_blk (wcmatch (cdr (assoc 2 (entget entity_name))) "\*U*"))
+     din_blk (wcmatch (cdr (assoc 2 (entget entity_name))) "`*U*"))
     (cond
       (
-        (eq din_blk T)
+        din_blk ;if true 
         (progn 
           (setq 
             a (entget (cdr (assoc 360 (member '(102 . "{ACAD_XDICTIONARY") (entget entity_name)))))

@@ -52,7 +52,7 @@
 
 ;сверили линии
 (defun che (n / fu summ)
-  (setq 
+ (setq 
     str_n n ;(itoa n)
 
     layer_name_cl_socket (strcat "_CL.TC" str_n " #*")
@@ -264,7 +264,3 @@
     )
   )
 ; (cadr(cadr(assoc -3 (entget (car (entsel)) '("PE_URL")))))
-
-
-
-

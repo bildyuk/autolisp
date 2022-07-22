@@ -47,6 +47,7 @@
   "Documentation for get_block_record_name. определяет название анонимного блока"
   (setq
      din_blk (wcmatch (cdr (assoc 2 (entget entity_name))) "`*U*"))
+  (print (entget entity_name))
     (cond
       (
         din_blk ;if true 
@@ -58,6 +59,9 @@
             d (entget (cdr (assoc 340 c))))
           (assoc 2 d)))
         (t (assoc 2 (entget entity_name)))))
+
+
+;(mapcar '(lambda (x) (entmod (subst (cons 1 (strcat "QF" x)) (assoc 1 (setq a (entget(car(nentsel))))) a))) '("01" "02"))
 
 ; (search_ent(car(entsel)) (list (cons 2 "ADDR")(cons 1 "TC01/01.02")))
 (defun search_ent (entity_name srch_tuple_lst / entity_desc entity_type srch_a srch_b)

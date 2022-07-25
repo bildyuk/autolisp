@@ -44,18 +44,3 @@
 
   
 
-
-
-  (defun del_hatch_ (block_name / a b)
-    "Documentation for del_hatch."
-    (setq 
-      a (print (tblsearch "block" block_name))
-      b (print (cdr(assoc -2 a))))
-    (print (entmake (list (cons 0 "block") (cons 2 block_name) (list 10 0 0 0)(cons 70 0))))
-    (while (/= b nil)
-      (setq c (entget b))
-      (if (/= (cdr(assoc 0 c)) "HATCH") (entmake c))
-      (print (setq b (entnext b)))
-      )
-    (entmake (list (cons 0 "endblk")))
-    )
